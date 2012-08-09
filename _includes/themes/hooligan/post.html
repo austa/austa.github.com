@@ -1,6 +1,6 @@
 <div class="page-header">
   <h1>
-    {{ page.title }} 
+    {{ page.title }}
     {% if page.tagline %}
       <small>{{ page.tagline }}</small>
     {% endif %}
@@ -13,42 +13,42 @@
     <hr>
     <div class="pagination btn-group">
       {% if page.previous %}
-        <a class="btn prev" href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a>
+        <a class="btn prev" href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Önceki</a>
       {% else %}
-        <a class="btn disabled prev">&larr; Previous</a>
+        <a class="btn disabled prev">&larr; Önceki</a>
       {% endif %}
-        <a class="btn" href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a>
+        <a class="btn" href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Arşiv</a>
       {% if page.next %}
-        <a class="btn next" href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a>
+        <a class="btn next" href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Sonaki &rarr;</a>
       {% else %}
-        <a class="btn next disabled">Next &rarr;</a>
+        <a class="btn next disabled">Sonraki &rarr;</a>
       {% endif %}
     </div>
     <hr>
     {% include JB/comments %}
   </div>
-  
+
   <div class="span4">
     <section>
-      <h4>Published</h4>
+      <h4>Yayınlama Tarihi</h4>
       <div class="date"><span>{{ page.date | date_to_long_string }}</span></div>
     </section>
     {% if page.category %}
       <section>
-        <h4>Category</h4>
+        <h4>Kategori</h4>
         <span class="category">
           {{ page.category }}
         </span>
       </section>
-    {% endif %}     
+    {% endif %}
     {% unless page.tags == empty %}
       <section>
-        <h4>Tags</h4>
+        <h4>Etiketler</h4>
         <ul class="tag_box">
           {% assign tags_list = page.tags %}
           {% include JB/tags_list %}
         </ul>
       </section>
-    {% endunless %}         
+    {% endunless %}
   </div>
 </div>
