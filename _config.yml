@@ -12,8 +12,8 @@ pygments: true
 title : MhmtBsl
 tagline: Site Tagline
 author :
-  name : Mehmet Başal
-  email : mhmtsl@ce.omu.edu.tr
+  name :
+  email : mhmtbsl@ce.omu.edu.tr
   github : mhmt
   facebook : mhmtbsl53
 
