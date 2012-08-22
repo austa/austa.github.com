@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Mehmet Başal
+title: Merhaba Dünya !!
 tagline: Supporting tagline
 ---
 {% include JB/setup %}
