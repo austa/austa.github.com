@@ -43,7 +43,7 @@
           <h4>Hakkında</4>
           <ul>
             {% if site.author.email %}
-          <li class="contact"><a href="http://github.com/{{ site.author.github }}/" rel="me">{{ site.author.name }}</a></li>
+          <li class="contact"><a href="mailto:{{ site.author.email }}/" rel="me">{{ site.author.name }}</a></li>
             {% endif %}
             {% if site.author.github %}
             <li class="github"><a href="http://github.com/{{ site.author.github }}/" rel="me">Github</a></li>

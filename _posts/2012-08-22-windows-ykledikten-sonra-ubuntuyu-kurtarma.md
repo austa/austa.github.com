@@ -44,4 +44,55 @@ bahsedeyim.
  ![Easybootek](/images/bootekrani.png)
 
 
+ *LiveCD*niz varsa seçenekleriniz artıyor. Bunlardan biride **Boot-Repair** yazılımını kullanmak.
+ 
+ **Boot-Repair**i yüklemek için aşığdaki adımları takip edebilirsiniz.
+ 
+ *LiveCD*nizi takıp bilgisayarınızı CDden boot edin.
+
+ *Try Ubuntu* yada Türkçesiyle *Ubuntuyu dene* butonuna tıklayın.
+ 
+  ![Bootekrani](/images/livecd.jpg)
+
+ **Ctrl+alt+t** ile terminali açıp alttaki kodu girin.
+	
+	sudo add-apt-repository ppa:yannubuntu/boot-repair && sudo apt-get update
+ 	sudo apt-get install -y boot-repair
+
+  Eğer hiçbir hata almadıysanız **Boot-Repair** sisteminize kurulmuştur.
+  Terminalde 
+
+	boot-repair
+
+  komutunu verin karşınıza aşığıdaki gibi bir pencere gelcek.
+ ![Boot-Repair](/images/boot-repair.png)
+
+ **Recommended Repair** butonuna tıkalyıp gerisini programa bırakıyoruz.
+ İnternetiniz yoksa bu yolu kullanamayacaksınız.Grubu elle düzeltmek zorundayız.Yine terminalimizi açıp:
+
+	sudo grub-install /dev/XXX
+
+ Burdaki **XXX** *Ubuntu*nun sizin bilgisayarınızda bulunduğu  bölümün ismini temsil ediyor.(*sda3 gibi*)
+  Bunu bölümün ismini öğrenmek için terminaldeyken:
+
+	sudo fdisk -l
+  Buna benzer bir çıktı almanız lazım.
+
+  ![fdisk](/images/fdisk.png)
+
+  Benim bilgisayarımda **sda3** bölümünde *Ubuntu* kurulu.Yani:
+
+	sudo grub-install /dev/sda3
+
+  şeklinde olmalı.
+ 
+ daha fazlası [burada](https://help.ubuntu.com/community/RecoveringUbuntuAfterInstallingWindows)
+
+
+
+
+ 
+ 
+
+
 
