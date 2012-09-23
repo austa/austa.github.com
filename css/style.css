@@ -5,8 +5,7 @@
 
 body{
     background-color:#ffffff;
-    behavior: url("csshover.htc");
-    behavior: url("PIE.htc");
+    behavior: url("ie-css3.htc");
     padding:10px 50px 0 0;
     font-family:"Helvetica", Helvetica, Arial, sans-serif;
 	font-size: 14px;
