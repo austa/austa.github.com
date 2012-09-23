@@ -1,14 +1,11 @@
 ---
-layout: page
-title: Mehmet Başal
-tagline: Supporting tagline
+layout: default
 ---
-{% include JB/setup %}
 
-<ul >
+<ul class="ind" >
     {% for post in site.posts limit 4 %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-        {{ post.content | strip_html | truncatewords:75}}<br>
-            <a href="{{ post.url }}">Devamını oku...</a><br><br>
+    <br>
+    <li><a href="{{ post.url }}">{{ post.title }}</a><br><span>{{ post.date | date: "%m.%d.%Y" }}</span></li>
     {% endfor %}
+    <br>
 </ul>

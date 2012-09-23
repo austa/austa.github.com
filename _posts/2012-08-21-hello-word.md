@@ -2,9 +2,13 @@
 layout: post
 title: "Hello Word"
 description: ""
-category: Genel
-tags: []
 ---
-{% include JB/setup %}
+
 
 **Blog** hayatına başlagıç işlemi tamamlandı.
+
+{% highlight ruby %}
+def selamla
+  puts 'Selamun aleyküm'
+end
+{% endhighlight %}
