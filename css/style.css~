@@ -27,7 +27,7 @@ img {
 
 .ind{
     float:center;
-    margin: 87px 10em;
+    margin: 89px 10em;
     list-style:none;
     height:auto;
     background-color: white;
