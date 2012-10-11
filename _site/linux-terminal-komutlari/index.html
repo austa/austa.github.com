@@ -1,0 +1,122 @@
+
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/pygments.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/style.css"/>
+	<title> Mehmet Başal</title>
+</head>
+
+<ul class="menu">
+    <b>Mehmet Başal</b>
+    <br>Bilgisayar Mühendisliği<br>
+        3.Sınıf Öğrencisi<br><br>
+    <li><a href="/index.html">Anasayfa </a></li>
+    <li><a href="/about.html">Hakkımda</a></li>
+    <li><a href="/projeler.html">Projeler</a></li>
+</ul>
+
+<ul class="social">
+<a target="_blank" href="http://github.com/mhmt"><img class="" alt="" width= 32 height=32 src="/images/github.png" /></a>
+<a href="mailto:mhmtbsl@ce.omu.edu.tr"><img class="" alt="" width= 32 height=32  src="/images/mail.jpg" /></a>
+<a target="_blank" href="http://facebook.com/mhmtbsl53"><img class="" alt="" src="/images/facebook.png"/></a>
+<a target="_blank" href="http://plus.google.com/110509893554582727134"><img class="" alt="" src="/images/google+.png" /></a>
+</ul>
+<body>
+<html>
+<head>
+
+</head>
+<body>
+<article class="post">
+<br><br>
+<h4><a href="/linux-terminal-komutlari"> Linux Terminal Komutları I </a></h4>
+	<div class="meta">
+       10.10.2012
+     </div>
+<div class="cont">
+<p>Az çok linux(Unix) işletim sistemi ile ilgisi olanlar komut satırını kullanmanın sağladığı gücü bilir. Bizde terminal komutlarını giriş yapalım. Burda temel komutları anlatmayı deneyeceğim. Bende daha öğrenme aşamasında olduğum için hatamız olursa kusuruma bakmayın.</p>
+
+<h3 id='cd'>cd</h3>
+
+<p>Açılımı <em>Change Directory</em> Türkçe meali ile &#8220;Dizin Değiştir&#8221;.</p>
+<div class='highlight'><pre><code class='bash'>    
+    <span class='nb'>cd</span> /Dosya/yolu <span class='c'>#=&gt; Yolu verilen dizine götürür.</span>
+    <span class='nb'>cd</span>             <span class='c'>#=&gt; Home(ev) dizinine götürür.</span>
+    <span class='nb'>cd</span> ..          <span class='c'>#=&gt; Bir üst dizine götürür.</span>
+</code></pre>
+</div>
+<h3 id='pwd'>pwd</h3>
+
+<p>Açılımı <em>Print Working Directory</em> Türkçe meali ile &#8220;Çalışma Dizinini Yazdır&#8221;</p>
+<div class='highlight'><pre><code class='bash'>    
+    <span class='nb'>pwd</span>            <span class='c'>#=&gt; İçinde bulunulan dizini gösterir.</span>
+    /home/mhmt/Downloads
+</code></pre>
+</div>
+<h3 id='ls'>ls</h3>
+
+<p>Açılımı <em>Change Directory</em> Türkçe meali ile &#8220;Dizin Değiştir&#8221;.</p>
+<div class='highlight'><pre><code class='bash'>    
+    ls            <span class='c'>#=&gt; İçinde bulunulan dizindeki dosya ve klasörleri listeler.</span>
+    ls -a         <span class='c'>#=&gt; Bütün gizli dosyalar ve klasörlerle beraber  listeler.</span>
+    ls -l         <span class='c'>#=&gt; Dosyaların izinlerini, sahiplerini, boyutlarını</span>
+                  <span class='c'>#=&gt; ve son güncellenme tarihlerini ile beraber listeler.</span>
+    ls -d         <span class='c'>#=&gt; Sadece dizinleri listeler.</span>
+    ls -ld        <span class='c'>#=&gt; Verilen dizinin bilgilerini listeler.</span>
+    ls /dizin     <span class='c'>#=&gt; Verilen dizinin içini listeler.</span>
+</code></pre>
+</div>
+<h3 id='mkdir'>mkdir</h3>
+
+<p>Açılımı <em>Make Directory</em> Türkçe meali ile &#8220;Dizin Oluştur&#8221;.</p>
+<div class='highlight'><pre><code class='bash'>    
+    mkdir dizin           <span class='c'>#=&gt; Dizin adlı klasör oluşturur.</span>
+    mkdir -p foo/bar/baz  <span class='c'>#=&gt; İç içe dizinler oluştur.</span>
+    
+</code></pre>
+</div>
+<h3 id='touch'>touch</h3>
+
+<p><em>touch</em> verilen isimde dosya oluştur. Eğer dosya varsa günceller.</p>
+<div class='highlight'><pre><code class='bash'>    
+    touch foo.txt          
+       
+</code></pre>
+</div>
+<h3 id='rm'>rm</h3>
+
+<p>&#8220;ReMove&#8221; verilen dizin yada dosyayı siler.</p>
+<div class='highlight'><pre><code class='bash'>  
+    rm foo.txt          <span class='c'>#=&gt; foo.txt&#39;i siler.</span>
+    rm -d               <span class='c'>#=&gt; Boş dizini siler.</span>
+    rm -f               <span class='c'>#=&gt; Dizinin boş yada dolu olmasını umursamaz.</span>
+    rm -r               <span class='c'>#=&gt; İç içe dizinleri siler.</span>
+
+       
+</code></pre>
+</div>
+</div>
+<br>
+<div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'mhmtbsl'; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</article>
+</body>
+</html>
+
+</body>
+</html>
