@@ -3,5 +3,5 @@ layout: post
 ---
 
 =
-Buraya bişeyler
+Buraya bişeyler yazacağız
 =
