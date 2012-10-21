@@ -5,7 +5,7 @@ description: ""
 ---
 
 
-*Blog* hayatına başlagıç işlemi tamamlandı.
+Blog hayatına başlagıç işlemi tamamlandı.
 
 {% highlight ruby %}
 def selamVer
