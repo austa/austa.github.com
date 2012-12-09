@@ -5,10 +5,10 @@ description: ""
 ---
 
 
-*Blog* hayatına başlagıç işlemi tamamlandı.
 
-{% highlight ruby %}
-def selamVer
-  puts 'Selamun aleyküm'
-end
+
+{% highlight python %}
+def selamVer():
+	print 'Selamun aleyküm'
+
 {% endhighlight %}

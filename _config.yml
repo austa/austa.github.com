@@ -2,10 +2,10 @@ permalink: /:categories/:title
 pygments: true
 comments: true
 author:
-     name: Mehmet Başal
-     email: mhmtbsl@ce.omu.edu.tr
-     github: mhmt
-     facebook: mhmtbsl53
-     googleplus: 110509893554582727134
+     name: Alaattin Usta
+     email: alaattin.usta@bil.omu.edu.tr
+     github: austa
+     facebook: alaattin.usta.94
+     googleplus: 113334165445363616773
 server: true
 auto: true
