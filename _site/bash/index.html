@@ -30,12 +30,55 @@
 <body>
 <article class="post">
 <br><br>
-<h4><a href="/about.html">  </a></h4>
+<h4><a href="/bash"> Bash programlama </a></h4>
 	<div class="meta">
-       
+       09.12.2012
      </div>
 <div class="cont">
-<h1 id='buraya_bieyler_yazacaz'>Buraya bişeyler yazacağız</h1>
+<div class='highlight'><pre><code class='bash'>clear
+<span class='nb'>echo</span> <span class='s2'>&quot;Bu program istediğiniz dosya hakkında birkaç işlem yapabilir&quot;</span>
+<span class='nb'>echo</span>
+<span class='nb'>echo</span> <span class='s2'>&quot;------------------------------------------------------------&quot;</span>
+<span class='nb'>echo</span>
+<span class='nb'>echo</span> <span class='s2'>&quot;Ne yapmak istiyorsunuz ? &quot;</span>
+<span class='nb'>echo</span>
+<span class='nb'>echo</span> <span class='s2'>&quot;1-)Dosya hakkında bilgi&quot;</span>
+<span class='nb'>echo</span>
+<span class='nb'>echo</span> <span class='s2'>&quot;2-)Bulunduğunuz dizin nerede&quot;</span>
+<span class='nb'>echo </span>
+<span class='nb'>echo</span> <span class='s2'>&quot;3-)Dosyayı sil&quot;</span>
+<span class='nb'>echo</span>
+<span class='nb'>echo</span> <span class='s2'>&quot;4-)Dosya boş mu dolu mu?&quot;</span>
+<span class='nb'>echo</span>
+<span class='nb'>echo</span>
+<span class='nb'>echo</span> <span class='s2'>&quot;Seçiminiz nedir?&quot;</span>
+<span class='nb'>read </span>secim
+<span class='nb'>echo</span>
+<span class='nb'>echo</span>
+<span class='k'>case</span> <span class='nv'>$secim</span> in
+	1<span class='o'>)</span> 
+	   ls -l <span class='nv'>$1</span>
+	   ;;
+	2<span class='o'>)</span> 
+	   <span class='nb'>pwd</span>
+	   ;;
+	3<span class='o'>)</span> 
+	   rm <span class='nv'>$1</span>
+	   ;;
+	4<span class='o'>)</span> 
+	   <span class='k'>if</span> <span class='o'>[</span> -s <span class='nv'>$1</span> <span class='o'>]</span>; <span class='k'>then</span>
+<span class='k'>		</span><span class='nb'>echo</span> <span class='s2'>&quot;dosya boş değil&quot;</span>
+	   <span class='k'>else</span>
+<span class='k'>		</span><span class='nb'>echo</span> <span class='s2'>&quot;dosya boş durumda&quot;</span>
+	   <span class='k'>fi</span>
+	
+	   ;;	
+	*<span class='o'>)</span>
+		<span class='nb'>echo</span> <span class='s2'>&quot;1 ile 4 arasında sayı giriniz!&quot;</span>
+	   ;;
+<span class='k'>esac</span>
+</code></pre>
+</div>
 </div>
 <br>
 <div id="disqus_thread"></div>
